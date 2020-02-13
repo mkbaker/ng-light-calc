@@ -8,8 +8,10 @@
     <script type="text/javascript" src="assets/calculator.js"></script>
     <title>Calculator</title>
   </head>
+
   <body>
     <div id="myCalculator" ng-controller="CalculatorController">
+      <h1>Lightbulb Cost Comparison Calculator</h1>
       <main>
         <section class="inc">
           <div>
@@ -58,8 +60,13 @@
 			<p>Usage <br>per day</p>
 			<input type="number" ng-change="calculate()" ng-model="current_hours" value="{{current_hours}}">  
 		</div>
-        <div></div>
       </form>
+       <div id="textBlock">
+          This calculator can estimate and compare yearly costs for different types of bulbs.
+          Enter your brightness in lumens and the Kilowatt-hour cost, as well as an estimate 
+          of how long the bulb will be on per day. 
+          The calculations will update in real time!
+        </div>
     </div>
   </body>
 </html>
